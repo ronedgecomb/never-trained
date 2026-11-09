@@ -1,0 +1,72 @@
+Authored policy, sticky25 protocol, development seeds 1-20
+balls lost: 65
+  preceded by >= 2 overridden actions in the last 8 steps: 62
+  preceded by exactly 1 overridden action: 0
+  preceded by none: 3
+  ball travelling more than 70 degrees from vertical when lost: 3
+
+seed  2 step   661: paddle 62px, ball angle   22 deg from vertical, ball-paddle offset   +61.9px, 4 of the last 8 actions overridden
+seed  2 step  2711: paddle 31px, ball angle   36 deg from vertical, ball-paddle offset  -108.6px, 3 of the last 8 actions overridden
+seed  2 step  5111: paddle 31px, ball angle   86 deg from vertical, ball-paddle offset   +44.0px, 0 of the last 8 actions overridden
+seed  2 step  5942: paddle 31px, ball angle   23 deg from vertical, ball-paddle offset   -72.8px, 3 of the last 8 actions overridden
+seed  3 step  3673: paddle 31px, ball angle   11 deg from vertical, ball-paddle offset   -37.3px, 4 of the last 8 actions overridden
+seed  3 step  5813: paddle 31px, ball angle   43 deg from vertical, ball-paddle offset   -29.4px, 3 of the last 8 actions overridden
+seed  5 step  2308: paddle 31px, ball angle   39 deg from vertical, ball-paddle offset   -19.3px, 3 of the last 8 actions overridden
+seed  5 step  3312: paddle 31px, ball angle   29 deg from vertical, ball-paddle offset   -53.8px, 3 of the last 8 actions overridden
+seed  5 step  4230: paddle 31px, ball angle   25 deg from vertical, ball-paddle offset   -78.5px, 3 of the last 8 actions overridden
+seed  6 step  1311: paddle 31px, ball angle   35 deg from vertical, ball-paddle offset   +98.4px, 4 of the last 8 actions overridden
+seed  6 step  2048: paddle 31px, ball angle   16 deg from vertical, ball-paddle offset   -62.0px, 5 of the last 8 actions overridden
+seed  6 step  3660: paddle 31px, ball angle    6 deg from vertical, ball-paddle offset   -45.5px, 3 of the last 8 actions overridden
+seed  6 step  4253: paddle 31px, ball angle   14 deg from vertical, ball-paddle offset   +38.5px, 4 of the last 8 actions overridden
+seed  7 step  3239: paddle 31px, ball angle    5 deg from vertical, ball-paddle offset   +57.7px, 5 of the last 8 actions overridden
+seed  7 step  4546: paddle 31px, ball angle   20 deg from vertical, ball-paddle offset   +77.2px, 3 of the last 8 actions overridden
+seed  7 step  4718: paddle 31px, ball angle   32 deg from vertical, ball-paddle offset   +68.7px, 3 of the last 8 actions overridden
+seed  7 step  5139: paddle 31px, ball angle   20 deg from vertical, ball-paddle offset   +94.1px, 4 of the last 8 actions overridden
+seed  7 step  7959: paddle 31px, ball angle   12 deg from vertical, ball-paddle offset   -94.5px, 4 of the last 8 actions overridden
+seed  8 step  2931: paddle 31px, ball angle   33 deg from vertical, ball-paddle offset   -61.5px, 3 of the last 8 actions overridden
+seed  8 step  6365: paddle 31px, ball angle   86 deg from vertical, ball-paddle offset   +47.9px, 0 of the last 8 actions overridden
+seed  9 step  1852: paddle 31px, ball angle    3 deg from vertical, ball-paddle offset   -42.7px, 3 of the last 8 actions overridden
+seed  9 step  3539: paddle 31px, ball angle   28 deg from vertical, ball-paddle offset   -80.3px, 3 of the last 8 actions overridden
+seed  9 step  3841: paddle 62px, ball angle    7 deg from vertical, ball-paddle offset  +109.4px, 5 of the last 8 actions overridden
+seed  9 step  4074: paddle 62px, ball angle    6 deg from vertical, ball-paddle offset   +72.3px, 4 of the last 8 actions overridden
+seed  9 step  5282: paddle 31px, ball angle   31 deg from vertical, ball-paddle offset   -53.2px, 5 of the last 8 actions overridden
+seed 10 step  2790: paddle 31px, ball angle   16 deg from vertical, ball-paddle offset   -98.9px, 5 of the last 8 actions overridden
+seed 10 step  3774: paddle 31px, ball angle   14 deg from vertical, ball-paddle offset   +64.8px, 5 of the last 8 actions overridden
+seed 10 step  4738: paddle 31px, ball angle   16 deg from vertical, ball-paddle offset   -95.8px, 4 of the last 8 actions overridden
+seed 10 step  5473: paddle 31px, ball angle   86 deg from vertical, ball-paddle offset   -38.0px, 0 of the last 8 actions overridden
+seed 10 step  5924: paddle 31px, ball angle    5 deg from vertical, ball-paddle offset   -42.7px, 3 of the last 8 actions overridden
+seed 11 step  2970: paddle 31px, ball angle    5 deg from vertical, ball-paddle offset   -16.6px, 4 of the last 8 actions overridden
+seed 11 step  5895: paddle 31px, ball angle   44 deg from vertical, ball-paddle offset   +69.8px, 3 of the last 8 actions overridden
+seed 12 step   815: paddle 62px, ball angle    4 deg from vertical, ball-paddle offset  +128.4px, 5 of the last 8 actions overridden
+seed 12 step  1007: paddle 31px, ball angle   26 deg from vertical, ball-paddle offset   -79.3px, 2 of the last 8 actions overridden
+seed 12 step  2833: paddle 31px, ball angle   10 deg from vertical, ball-paddle offset  -184.7px, 6 of the last 8 actions overridden
+seed 12 step  3577: paddle 62px, ball angle   17 deg from vertical, ball-paddle offset  -139.2px, 4 of the last 8 actions overridden
+seed 13 step  1532: paddle 31px, ball angle   25 deg from vertical, ball-paddle offset   -39.3px, 4 of the last 8 actions overridden
+seed 13 step  2766: paddle 31px, ball angle   25 deg from vertical, ball-paddle offset   -59.4px, 3 of the last 8 actions overridden
+seed 13 step  3133: paddle 62px, ball angle    8 deg from vertical, ball-paddle offset  +103.7px, 4 of the last 8 actions overridden
+seed 13 step  4980: paddle 31px, ball angle   37 deg from vertical, ball-paddle offset   -45.3px, 3 of the last 8 actions overridden
+seed 14 step  2647: paddle 31px, ball angle   35 deg from vertical, ball-paddle offset    -6.7px, 3 of the last 8 actions overridden
+seed 14 step  4297: paddle 31px, ball angle   18 deg from vertical, ball-paddle offset   +69.6px, 4 of the last 8 actions overridden
+seed 15 step   270: paddle 62px, ball angle   15 deg from vertical, ball-paddle offset   -77.0px, 4 of the last 8 actions overridden
+seed 15 step  1862: paddle 31px, ball angle    3 deg from vertical, ball-paddle offset   +42.8px, 4 of the last 8 actions overridden
+seed 15 step  2879: paddle 31px, ball angle   36 deg from vertical, ball-paddle offset   -87.5px, 5 of the last 8 actions overridden
+seed 15 step  3266: paddle 62px, ball angle    3 deg from vertical, ball-paddle offset   +93.4px, 4 of the last 8 actions overridden
+seed 15 step  3853: paddle 62px, ball angle   15 deg from vertical, ball-paddle offset   +45.5px, 4 of the last 8 actions overridden
+seed 16 step   537: paddle 62px, ball angle   15 deg from vertical, ball-paddle offset   +59.9px, 4 of the last 8 actions overridden
+seed 16 step  1705: paddle 31px, ball angle   27 deg from vertical, ball-paddle offset   -80.8px, 3 of the last 8 actions overridden
+seed 16 step  2646: paddle 31px, ball angle   41 deg from vertical, ball-paddle offset   -62.9px, 3 of the last 8 actions overridden
+seed 18 step  1493: paddle 31px, ball angle   31 deg from vertical, ball-paddle offset  -124.7px, 5 of the last 8 actions overridden
+seed 18 step  2088: paddle 31px, ball angle   38 deg from vertical, ball-paddle offset   +53.4px, 3 of the last 8 actions overridden
+seed 18 step  2497: paddle 31px, ball angle   37 deg from vertical, ball-paddle offset   -30.8px, 4 of the last 8 actions overridden
+seed 18 step  3231: paddle 31px, ball angle   42 deg from vertical, ball-paddle offset   -46.0px, 3 of the last 8 actions overridden
+seed 18 step  5976: paddle 31px, ball angle   30 deg from vertical, ball-paddle offset   +16.4px, 3 of the last 8 actions overridden
+seed 19 step   798: paddle 62px, ball angle   22 deg from vertical, ball-paddle offset   +44.2px, 4 of the last 8 actions overridden
+seed 19 step  1494: paddle 31px, ball angle   33 deg from vertical, ball-paddle offset   +42.1px, 3 of the last 8 actions overridden
+seed 19 step  1859: paddle 31px, ball angle   16 deg from vertical, ball-paddle offset   -74.4px, 3 of the last 8 actions overridden
+seed 19 step  2446: paddle 31px, ball angle   31 deg from vertical, ball-paddle offset    -0.3px, 3 of the last 8 actions overridden
+seed 19 step  4087: paddle 31px, ball angle   33 deg from vertical, ball-paddle offset   +10.6px, 3 of the last 8 actions overridden
+seed 20 step  1343: paddle 31px, ball angle   39 deg from vertical, ball-paddle offset   -92.8px, 3 of the last 8 actions overridden
+seed 20 step  1554: paddle 31px, ball angle   30 deg from vertical, ball-paddle offset   -82.9px, 2 of the last 8 actions overridden
+seed 20 step  2045: paddle 31px, ball angle   47 deg from vertical, ball-paddle offset   -82.8px, 3 of the last 8 actions overridden
+seed 20 step  2476: paddle 31px, ball angle    5 deg from vertical, ball-paddle offset  -166.6px, 6 of the last 8 actions overridden
+seed 20 step  3751: paddle 31px, ball angle   17 deg from vertical, ball-paddle offset   -66.9px, 4 of the last 8 actions overridden

@@ -1,0 +1,329 @@
+{
+  "phase": "dev",
+  "started_utc": "2026-11-09T21:54:34+00:00",
+  "finished_utc": "2026-11-09T21:54:40+00:00",
+  "seeds": [
+    1,
+    20
+  ],
+  "episodes_per_cell": 20,
+  "max_agent_steps_per_episode": 30000,
+  "environment": {
+    "library": "PufferLib 5.0 (Ocean Breakout)",
+    "pufferlib_commit": "ea7f989371270d2948f96728bda8aec5e7634a4c",
+    "config": "config/default.ini + config/breakout.ini, no overrides"
+  },
+  "weights_sha256": {
+    "authored": "2a3c22fb38326a26f4b3b28ae3675813989f87d0cf9c69877b381c49d738f6fb",
+    "naive_tracker": "f8e03e6efcefe19979809dc0f5f1d9aa6755b7ab3cf0ca5cb4699fc9870245db",
+    "pufferai_pretrained": "859f57a45d5b51a39ca94e1601cc9ff572f5b26ea5c4ecec7853ca45a258dea3"
+  },
+  "harness_sha256": {
+    "bk_eval.c": "e47cd24fd3cfbe453cf54fc0c676526ad177e3c14d2b5aeb7afad8a7ce3b651c",
+    "bk_common.h": "745d2d52937edd55c1314734dfcbdfae2f454ac2bc1b0ef2df726c04152ff0ca"
+  },
+  "host": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.12.16",
+    "numpy": "2.5.4"
+  },
+  "policies": {
+    "authored": "Weights written directly by Claude (policy/gen_weights.py). No training.",
+    "naive_tracker": "Authored baseline: linear 'follow the ball' rule in the same architecture.",
+    "pufferai_pretrained": "Checkpoint published by PufferAI (puffer.ai repo, docs/assets/models/breakout_weights.bin), trained with PufferLib's RL trainer.",
+    "random": "Uniformly random action each agent step."
+  },
+  "protocols": {
+    "standard": "PufferLib Breakout exactly as configured in config/breakout.ini.",
+    "sticky25": "Stress test: each agent step, with probability 0.25 the previously applied action is repeated instead of the policy's choice.",
+    "greedy": "Standard environment, argmax action instead of PufferLib's softmax sampling."
+  },
+  "summary": {
+    "authored/standard": {
+      "episodes": 20,
+      "score_mean": 864.0,
+      "score_std": 0.0,
+      "score_min": 864.0,
+      "score_median": 864.0,
+      "score_max": 864.0,
+      "score_mean_ci95": [
+        864.0,
+        864.0
+      ],
+      "perf_mean": 1.0,
+      "cleared": 20,
+      "clear_rate": 1.0,
+      "clear_rate_ci95": [
+        0.8388698745050667,
+        1.0
+      ],
+      "balls_lost_mean": 0.0,
+      "balls_lost_max": 0,
+      "zero_loss_episodes": 20,
+      "frames_mean": 17222.05,
+      "frames_to_clear_mean": 17222.05,
+      "truncated": 0,
+      "distinct_trajectories": 20
+    },
+    "naive_tracker/standard": {
+      "episodes": 20,
+      "score_mean": 864.0,
+      "score_std": 0.0,
+      "score_min": 864.0,
+      "score_median": 864.0,
+      "score_max": 864.0,
+      "score_mean_ci95": [
+        864.0,
+        864.0
+      ],
+      "perf_mean": 1.0,
+      "cleared": 20,
+      "clear_rate": 1.0,
+      "clear_rate_ci95": [
+        0.8388698745050667,
+        1.0
+      ],
+      "balls_lost_mean": 0.95,
+      "balls_lost_max": 2,
+      "zero_loss_episodes": 3,
+      "frames_mean": 17708.75,
+      "frames_to_clear_mean": 17708.75,
+      "truncated": 0,
+      "distinct_trajectories": 20
+    },
+    "pufferai_pretrained/standard": {
+      "episodes": 20,
+      "score_mean": 864.0,
+      "score_std": 0.0,
+      "score_min": 864.0,
+      "score_median": 864.0,
+      "score_max": 864.0,
+      "score_mean_ci95": [
+        864.0,
+        864.0
+      ],
+      "perf_mean": 1.0,
+      "cleared": 20,
+      "clear_rate": 1.0,
+      "clear_rate_ci95": [
+        0.8388698745050667,
+        1.0
+      ],
+      "balls_lost_mean": 2.95,
+      "balls_lost_max": 5,
+      "zero_loss_episodes": 1,
+      "frames_mean": 16040.4,
+      "frames_to_clear_mean": 16040.4,
+      "truncated": 0,
+      "distinct_trajectories": 20
+    },
+    "random/standard": {
+      "episodes": 20,
+      "score_mean": 0.8,
+      "score_std": 1.3611140947574414,
+      "score_min": 0.0,
+      "score_median": 0.0,
+      "score_max": 5.0,
+      "score_mean_ci95": [
+        0.3,
+        1.45
+      ],
+      "perf_mean": 0.000925925925925926,
+      "cleared": 0,
+      "clear_rate": 0.0,
+      "clear_rate_ci95": [
+        0.0,
+        0.16113012549493322
+      ],
+      "balls_lost_mean": 6.0,
+      "balls_lost_max": 6,
+      "zero_loss_episodes": 0,
+      "frames_mean": 544.0,
+      "frames_to_clear_mean": null,
+      "truncated": 0,
+      "distinct_trajectories": 20
+    },
+    "authored/sticky25": {
+      "episodes": 20,
+      "score_mean": 833.45,
+      "score_std": 66.67239229798824,
+      "score_min": 671.0,
+      "score_median": 864.0,
+      "score_max": 864.0,
+      "score_mean_ci95": [
+        802.05,
+        857.2
+      ],
+      "perf_mean": 0.9646412037037038,
+      "cleared": 16,
+      "clear_rate": 0.8,
+      "clear_rate_ci95": [
+        0.5839782779742401,
+        0.9193436467288
+      ],
+      "balls_lost_mean": 3.45,
+      "balls_lost_max": 6,
+      "zero_loss_episodes": 3,
+      "frames_mean": 18082.55,
+      "frames_to_clear_mean": 19187.0625,
+      "truncated": 0,
+      "distinct_trajectories": 20
+    },
+    "naive_tracker/sticky25": {
+      "episodes": 20,
+      "score_mean": 513.0,
+      "score_std": 176.11210544482887,
+      "score_min": 307.0,
+      "score_median": 463.0,
+      "score_max": 864.0,
+      "score_mean_ci95": [
+        441.44874999999996,
+        590.5024999999999
+      ],
+      "perf_mean": 0.59375,
+      "cleared": 1,
+      "clear_rate": 0.05,
+      "clear_rate_ci95": [
+        0.008881219432873136,
+        0.23613589351256675
+      ],
+      "balls_lost_mean": 5.85,
+      "balls_lost_max": 6,
+      "zero_loss_episodes": 0,
+      "frames_mean": 11703.15,
+      "frames_to_clear_mean": 26217.0,
+      "truncated": 0,
+      "distinct_trajectories": 20
+    },
+    "pufferai_pretrained/sticky25": {
+      "episodes": 20,
+      "score_mean": 283.55,
+      "score_std": 127.42695534057314,
+      "score_min": 64.0,
+      "score_median": 282.0,
+      "score_max": 594.0,
+      "score_mean_ci95": [
+        230.2475,
+        338.65124999999995
+      ],
+      "perf_mean": 0.32818287037037036,
+      "cleared": 0,
+      "clear_rate": 0.0,
+      "clear_rate_ci95": [
+        0.0,
+        0.16113012549493322
+      ],
+      "balls_lost_mean": 6.0,
+      "balls_lost_max": 6,
+      "zero_loss_episodes": 0,
+      "frames_mean": 5867.45,
+      "frames_to_clear_mean": null,
+      "truncated": 0,
+      "distinct_trajectories": 20
+    },
+    "random/sticky25": {
+      "episodes": 20,
+      "score_mean": 1.15,
+      "score_std": 1.348488432516786,
+      "score_min": 0.0,
+      "score_median": 1.0,
+      "score_max": 4.0,
+      "score_mean_ci95": [
+        0.6,
+        1.75
+      ],
+      "perf_mean": 0.0013310185185185185,
+      "cleared": 0,
+      "clear_rate": 0.0,
+      "clear_rate_ci95": [
+        0.0,
+        0.16113012549493322
+      ],
+      "balls_lost_mean": 6.0,
+      "balls_lost_max": 6,
+      "zero_loss_episodes": 0,
+      "frames_mean": 591.9,
+      "frames_to_clear_mean": null,
+      "truncated": 0,
+      "distinct_trajectories": 20
+    },
+    "authored/greedy": {
+      "episodes": 20,
+      "score_mean": 864.0,
+      "score_std": 0.0,
+      "score_min": 864.0,
+      "score_median": 864.0,
+      "score_max": 864.0,
+      "score_mean_ci95": [
+        864.0,
+        864.0
+      ],
+      "perf_mean": 1.0,
+      "cleared": 20,
+      "clear_rate": 1.0,
+      "clear_rate_ci95": [
+        0.8388698745050667,
+        1.0
+      ],
+      "balls_lost_mean": 0.0,
+      "balls_lost_max": 0,
+      "zero_loss_episodes": 20,
+      "frames_mean": 15725.4,
+      "frames_to_clear_mean": 15725.4,
+      "truncated": 0,
+      "distinct_trajectories": 2
+    },
+    "naive_tracker/greedy": {
+      "episodes": 20,
+      "score_mean": 864.0,
+      "score_std": 0.0,
+      "score_min": 864.0,
+      "score_median": 864.0,
+      "score_max": 864.0,
+      "score_mean_ci95": [
+        864.0,
+        864.0
+      ],
+      "perf_mean": 1.0,
+      "cleared": 20,
+      "clear_rate": 1.0,
+      "clear_rate_ci95": [
+        0.8388698745050667,
+        1.0
+      ],
+      "balls_lost_mean": 1.0,
+      "balls_lost_max": 1,
+      "zero_loss_episodes": 0,
+      "frames_mean": 17914.2,
+      "frames_to_clear_mean": 17914.2,
+      "truncated": 0,
+      "distinct_trajectories": 4
+    },
+    "pufferai_pretrained/greedy": {
+      "episodes": 20,
+      "score_mean": 862.05,
+      "score_std": 8.720665112249181,
+      "score_min": 825.0,
+      "score_median": 864.0,
+      "score_max": 864.0,
+      "score_mean_ci95": [
+        858.15,
+        864.0
+      ],
+      "perf_mean": 0.9977430555555555,
+      "cleared": 19,
+      "clear_rate": 0.95,
+      "clear_rate_ci95": [
+        0.7638641064874331,
+        0.9911187805671268
+      ],
+      "balls_lost_mean": 2.75,
+      "balls_lost_max": 6,
+      "zero_loss_episodes": 0,
+      "frames_mean": 15341.0,
+      "frames_to_clear_mean": 15353.526315789473,
+      "truncated": 0,
+      "distinct_trajectories": 10
+    }
+  }
+}

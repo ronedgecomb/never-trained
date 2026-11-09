@@ -1,0 +1,8 @@
+PufferLib commit ea7f989371270d2948f96728bda8aec5e7634a4c
+command: ./breakout WEIGHTS --headless --eval_episodes=100
+== authored_breakout
+CPU_EVAL env=breakout file_floats=16192 need=16192 match=1 untrained=0 n=100 perf=1.000000 score=864.000000 steps=1677750 agents=1
+== naive_tracker
+CPU_EVAL env=breakout file_floats=16192 need=16192 match=1 untrained=0 n=100 perf=1.000000 score=864.000000 steps=1639762 agents=1
+== pufferai_pretrained
+CPU_EVAL env=breakout file_floats=16192 need=16192 match=1 untrained=0 n=100 perf=0.980255 score=846.940002 steps=1586548 agents=1

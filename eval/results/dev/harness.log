@@ -1,0 +1,33 @@
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy net --weights /mnt/c/Users/ron/rl-fun/policy/weights/authored_breakout.bin --episodes 20 --seed-base 1 --max-steps 30000 --label authored/standard
+BK_EVAL label=authored/standard policy=net hidden=32 layers=4 file_floats=16192 need=16192 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0 random_start_max=0 argmax=0
+BK_EVAL episodes=20 seed_base=1
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy net --weights /mnt/c/Users/ron/rl-fun/policy/weights/naive_tracker.bin --episodes 20 --seed-base 1 --max-steps 30000 --label naive_tracker/standard
+BK_EVAL label=naive_tracker/standard policy=net hidden=32 layers=4 file_floats=16192 need=16192 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0 random_start_max=0 argmax=0
+BK_EVAL episodes=20 seed_base=1
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy net --weights /home/ron/.cache/rl-fun/reference_weights/breakout_weights.bin --episodes 20 --seed-base 1 --max-steps 30000 --label pufferai_pretrained/standard
+BK_EVAL label=pufferai_pretrained/standard policy=net hidden=32 layers=4 file_floats=16192 need=16192 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0 random_start_max=0 argmax=0
+BK_EVAL episodes=20 seed_base=1
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy random --episodes 20 --seed-base 1 --max-steps 30000 --label random/standard
+BK_EVAL label=random/standard policy=random hidden=32 layers=4 file_floats=0 need=0 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0 random_start_max=0 argmax=0
+BK_EVAL episodes=20 seed_base=1
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy net --weights /mnt/c/Users/ron/rl-fun/policy/weights/authored_breakout.bin --episodes 20 --seed-base 1 --max-steps 30000 --label authored/sticky25 --sticky 0.25
+BK_EVAL label=authored/sticky25 policy=net hidden=32 layers=4 file_floats=16192 need=16192 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0.25 random_start_max=0 argmax=0
+BK_EVAL episodes=20 seed_base=1
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy net --weights /mnt/c/Users/ron/rl-fun/policy/weights/naive_tracker.bin --episodes 20 --seed-base 1 --max-steps 30000 --label naive_tracker/sticky25 --sticky 0.25
+BK_EVAL label=naive_tracker/sticky25 policy=net hidden=32 layers=4 file_floats=16192 need=16192 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0.25 random_start_max=0 argmax=0
+BK_EVAL episodes=20 seed_base=1
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy net --weights /home/ron/.cache/rl-fun/reference_weights/breakout_weights.bin --episodes 20 --seed-base 1 --max-steps 30000 --label pufferai_pretrained/sticky25 --sticky 0.25
+BK_EVAL label=pufferai_pretrained/sticky25 policy=net hidden=32 layers=4 file_floats=16192 need=16192 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0.25 random_start_max=0 argmax=0
+BK_EVAL episodes=20 seed_base=1
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy random --episodes 20 --seed-base 1 --max-steps 30000 --label random/sticky25 --sticky 0.25
+BK_EVAL label=random/sticky25 policy=random hidden=32 layers=4 file_floats=0 need=0 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0.25 random_start_max=0 argmax=0
+BK_EVAL episodes=20 seed_base=1
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy net --weights /mnt/c/Users/ron/rl-fun/policy/weights/authored_breakout.bin --episodes 20 --seed-base 1 --max-steps 30000 --label authored/greedy --argmax
+BK_EVAL label=authored/greedy policy=net hidden=32 layers=4 file_floats=16192 need=16192 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0 random_start_max=0 argmax=1
+BK_EVAL episodes=20 seed_base=1
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy net --weights /mnt/c/Users/ron/rl-fun/policy/weights/naive_tracker.bin --episodes 20 --seed-base 1 --max-steps 30000 --label naive_tracker/greedy --argmax
+BK_EVAL label=naive_tracker/greedy policy=net hidden=32 layers=4 file_floats=16192 need=16192 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0 random_start_max=0 argmax=1
+BK_EVAL episodes=20 seed_base=1
+$ /home/ron/.cache/rl-fun/bin/bk_eval --puffer-root /home/ron/.cache/rl-fun/PufferLib --policy net --weights /home/ron/.cache/rl-fun/reference_weights/breakout_weights.bin --episodes 20 --seed-base 1 --max-steps 30000 --label pufferai_pretrained/greedy --argmax
+BK_EVAL label=pufferai_pretrained/greedy policy=net hidden=32 layers=4 file_floats=16192 need=16192 frameskip=3 width=576 height=330 paddle_w=62 ball=32x32 bricks=6x18 speed=256..448 paddle_speed=620 max_score=864 max_steps=30000 sticky=0 random_start_max=0 argmax=1
+BK_EVAL episodes=20 seed_base=1

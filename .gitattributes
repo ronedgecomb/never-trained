@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.bin binary
+# Evaluation records are stored byte for byte (the CSV logs end rows with CRLF).
+eval/results/** -text

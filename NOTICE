@@ -1,0 +1,7 @@
+never-trained
+Copyright 2026 Ron Edgecomb
+
+This product includes policy/puffernet.py, a NumPy port of the PufferNet
+forward pass from PufferLib (https://github.com/PufferAI/PufferLib),
+Copyright (c) 2022 PufferAI, used under the MIT License. The full text is in
+licenses/PufferLib.txt.

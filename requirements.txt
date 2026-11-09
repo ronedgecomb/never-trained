@@ -1,0 +1,2 @@
+# Evaluation, weight generation and tests (Python 3.12).
+numpy==2.5.4

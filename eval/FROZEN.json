@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-11-09T21:56:28+00:00",
+  "authored_weights_sha256": "2a3c22fb38326a26f4b3b28ae3675813989f87d0cf9c69877b381c49d738f6fb",
+  "naive_tracker_weights_sha256": "f8e03e6efcefe19979809dc0f5f1d9aa6755b7ab3cf0ca5cb4699fc9870245db",
+  "gen_weights_py_sha256": "63ef4c524cee6c24eb96b5b00259802d4f19ef34e29280bbb8bd2e4eeb21bae3",
+  "puffernet_py_sha256": "01dcdcda3c896a7347cb5bdb694f6d65bcb9542b55f54d0a1db89b415a5680b4",
+  "revision": 1,
+  "note": "Weights regenerate byte-identically from policy/gen_weights.py. Final seeds 1001-1100 had not been run when this file was written."
+}

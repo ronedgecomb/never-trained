@@ -1,0 +1,67 @@
+Authored Breakout policy: every non-zero weight
+
+ENCODER  channel = sum(weight * observation)
+  ONE  = +1.05769*paddle_y
+  VX   = +512*ball_vx
+  VY   = +512*ball_vy
+  BX   = +52.8846*paddle_y  +576*ball_x
+  BH   = +356.442*paddle_y  -330*ball_y
+  BQ   = +576*paddle_x  +35.9615*paddle_y  +31*paddle_w
+  ZY   = +129.038*paddle_y  -330*ball_y
+  TR   = -2304*paddle_x  +8667.26*paddle_y  +2304*ball_x  +6144*ball_vx  -124*paddle_w
+  TL   = +2304*paddle_x  +8531.88*paddle_y  -2304*ball_x  -6144*ball_vx  +124*paddle_w
+  TR2  = -2304*paddle_x  +8666.73*paddle_y  +2304*ball_x  +6144*ball_vx  -124*paddle_w
+  TL2  = +2304*paddle_x  +8531.35*paddle_y  -2304*ball_x  -6144*ball_vx  +124*paddle_w
+
+LAYER 1  (candidate | gate | highway rows; inputs are channels)
+  candidate[PC ] = -0.5*ONE  +1*BX
+  candidate[PQ ] = -0.5*ONE  +1*BQ
+  candidate[PB ] = -0.5*ONE  +1*BH
+  gate     [PC ] = +100*ONE
+  gate     [PQ ] = +100*ONE
+  gate     [PB ] = +100*ONE
+  highway  [PC ] = +0.004*VY
+  highway  [PQ ] = +0.004*VY
+  highway  [PB ] = +0.004*VX
+  highway[*] = -100*ONE for the other 29 units (gate closed: the unit copies its input)
+
+LAYER 2  (candidate | gate | highway rows; inputs are channels)
+  candidate[R1 ] = +480*VX  +400*VY  +4000*BX  +4000*BH  -8000*PC  -8000*PB
+  candidate[R2 ] = +480*VX  -3952*VY  +4000*BX  +4000*BH  -8000*PC  -8000*PB
+  candidate[R3 ] = -480*VX  -4752*VY  -4000*BX  -4000*BH  +8000*PC  +8000*PB
+  candidate[R4 ] = -480*VX  -9104*VY  -4000*BX  -4000*BH  +8000*PC  +8000*PB
+  gate     [R1 ] = +100*ONE
+  gate     [R2 ] = +100*ONE
+  gate     [R3 ] = +100*ONE
+  gate     [R4 ] = +100*ONE
+  highway  [R1 ] = +100*ONE
+  highway  [R2 ] = +100*ONE
+  highway  [R3 ] = +100*ONE
+  highway  [R4 ] = +100*ONE
+  highway[*] = -100*ONE for the other 28 units (gate closed: the unit copies its input)
+
+LAYER 3  (candidate | gate | highway rows; inputs are channels)
+  candidate[TR ] = +8192*ONE  -60*VX  -15.5*VY  -500*BX  -500*BH  +500*BQ  +1000*PC  -1000*PQ  +1000*PB  +0.25*R1  -0.25*R2  -0.25*R3  +0.25*R4
+  candidate[TL ] = +8192*ONE  +60*VX  -15.5*VY  +500*BX  +500*BH  -500*BQ  -1000*PC  +1000*PQ  -1000*PB  -0.25*R1  +0.25*R2  +0.25*R3  -0.25*R4
+  gate     [TR ] = +100*ONE
+  gate     [TL ] = +100*ONE
+  highway  [TR ] = +100*VY
+  highway  [TL ] = +100*VY
+  highway[*] = -100*ONE for the other 30 units (gate closed: the unit copies its input)
+
+LAYER 4  (candidate | gate | highway rows; inputs are channels)
+  candidate[TR ] = +1*TR2
+  candidate[TL ] = +1*TL2
+  gate     [TR ] = +100*ONE
+  gate     [TL ] = +100*ONE
+  highway  [TR ] = +100*ZY
+  highway  [TL ] = +100*ZY
+  highway[*] = -100*ONE for the other 30 units (gate closed: the unit copies its input)
+
+DECODER  logit = sum(weight * channel)
+  NOOP  = 0
+  LEFT  = -98310*ONE  +12*TL
+  RIGHT = -98310*ONE  +12*TR
+  value = 0
+
+non-zero weights: 233 of 16192

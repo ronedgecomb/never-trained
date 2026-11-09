@@ -1,0 +1,12 @@
+{
+  "phase": "final",
+  "checked_utc": "2026-11-09T22:43:39+00:00",
+  "episodes_compared": 1100,
+  "identical": true,
+  "mismatching_rows": [],
+  "harness_sha256": {
+    "bk_eval.c": "1bb0ed465a0b4b76bac3faa0f8245f13baefd50edc61542c092d220f73844898",
+    "bk_common.h": "7f823f7786851d5fd3981a0aea7196c62cc2ed30a733b2047a80d9c3bfa5727d"
+  },
+  "note": "Re-run of the stored evaluation with the harness sources as they are now."
+}
